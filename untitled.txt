@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spice Garden | Fine Dining Restaurant</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    body { background: radial-gradient(circle at top, #2b0f0f, #120606); color:#f5f5f5; }header {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header h1 { font-size: 3.5rem; letter-spacing: 2px; }
+header p { margin: 15px 0; font-size: 1.2rem; }
+header button {
+  padding: 12px 30px;
+  border: none;
+  background: #c59d5f;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+nav {
+  position: fixed;
+  top: 0; width: 100%;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+}
+
+nav h2 { color:#ff6a00; font-weight:900; letter-spacing:2px; display:flex; align-items:center; gap:10px; }
+
+nav h2::before{content:'🍲'; font-size:1.5rem;} nav ul { list-style: none; display: flex; gap: 25px; } nav a { color:white; text-decoration:none; font-weight:500; }
+
+section { padding: 80px 10%; background: rgba(0,0,0,0.35); backdrop-filter: blur(6px); margin: 40px 0; border-radius: 25px; }
+
+.about, .contact { text-align:center; }
+.about h2, .menu h2, .contact h2 { font-size:2.5rem; margin-bottom:20px; }
+
+.menu-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:30px;
+}
+
+.menu-item {
+  background: linear-gradient(145deg, #2a0d0d, #140707);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 15px 40px rgba(0,0,0,.6);
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.menu-item img { width:100%; height:200px; object-fit:cover; }
+.menu-item div { padding:20px; }
+.menu-item h3 { margin-bottom:10px; color:#ffb703; letter-spacing:1px; }
+.price { color:#ff6a00; font-weight:bold; font-size:1.1rem; }
+
+footer {
+  background: linear-gradient(90deg, #000, #1a0000);
+  color:#ccc;
+  text-align:center;
+  padding:30px;
+  margin-top:60px;
+}
+
+  </style>
+</head>
+<body><nav>
+  <h2>🔥 Ashchim Dhaba</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/919999999999" class="whatsapp-float">🟢 Order</a>
+</nav><style>
+.whatsapp-float{
+  position:fixed;
+  bottom:25px;
+  right:25px;
+  background:#25D366;
+  color:white;
+  padding:15px 22px;
+  border-radius:50px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 10px 30px rgba(0,0,0,.6);
+  z-index:2000;
+}
+.whatsapp-float:hover{transform:scale(1.08);}
+.menu-item:hover{transform:translateY(-8px) scale(1.02); transition:.4s;}
+</style><header id="home">
+  <div>
+    <h1>Authentic Indian Flavours</h1>
+    <p>Premium taste • Fresh ingredients • Elegant dining</p>
+    <button onclick="window.open('https://wa.me/919999999999')">Order on WhatsApp</button>
+  </div>
+</header><section class="about" id="about">
+  <h2>About Us</h2>
+  <p>Spice Garden is a premium Indian restaurant offering authentic North Indian cuisine with a modern touch. We serve quality food in a warm and elegant atmosphere.</p>
+</section><section class="menu" id="menu">
+  <h2>Dhaba Menu</h2>
+  <div class="menu-grid"><div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc" />
+  <div>
+    <h3>Veg Thali</h3>
+    <p>2 sabzi, dal, rice, 4 roti, salad</p>
+    <span class="price">₹180</span>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1604908177522-402f0c6d0d96" />
+  <div>
+    <h3>Soya Chaap Masala</h3>
+    <p>Dhaba-style spicy gravy</p>
+    <span class="price">₹220</span>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7" />
+  <div>
+    <h3>Dal Tadka</h3>
+    <p>Yellow dal with desi ghee tadka</p>
+    <span class="price">₹150</span>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1605475128023-6c9f3f3f3d6e" />
+  <div>
+    <h3>Tawa Roti</h3>
+    <p>Fresh butter tawa roti</p>
+    <span class="price">₹12 / piece</span>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950" />
+  <div>
+    <h3>Paneer Butter Masala</h3>
+    <p>Rich tomato gravy</p>
+    <span class="price">₹240</span>
+  </div>
+</div>
+
+<div class="menu-item">
+  <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46" />
+  <div>
+    <h3>Jeera Rice</h3>
+    <p>Steamed rice with jeera tadka</p>
+    <span class="price">₹120</span>
+  </div>
+</div>
+
+  </div>
+</section><section class="reviews" id="reviews">
+  <div style="text-align:center; margin-bottom:30px;">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://wa.me/919999999999" alt="QR Menu" style="border-radius:15px; box-shadow:0 10px 30px rgba(0,0,0,.5);" />
+    <p style="margin-top:10px;">📲 Scan for Menu & Order</p>
+  </div>
+  <h2>Customer Reviews ⭐⭐⭐⭐⭐</h2>
+  <div class="menu-grid"><div class="menu-item">
+  <div>
+    <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+    <p>"Best dhaba food in Ashchim Vihar. Soya chaap is amazing and quantity is full paisa vasool."</p>
+    <strong>– Rahul S.</strong>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>⭐ ⭐ ⭐ ⭐ ⭐</h3>
+    <p>"Pure desi taste. Dal tadka and roti reminds me of highway dhabas."</p>
+    <strong>– Pooja K.</strong>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>⭐ ⭐ ⭐ ⭐</h3>
+    <p>"Affordable prices and fast service. Good for family dinner."</p>
+    <strong>– Amit V.</strong>
+  </div>
+</div>
+
+  </div>
+</section><section class="contact" id="contact">
+  <h2>Visit & Order</h2>
+  <p>📍 Pipal Chowk, Ashchim Vihar, Delhi – 110063</p>
+  <p>📞 +91 9XXXXXXXXX</p>
+  <p>🕒 10:30 AM – 11:30 PM</p>
+  <br />
+  <iframe src="https://www.google.com/maps?q=Pipal%20Chowk%20Ashchim%20Vihar%20Delhi%20110063&output=embed" width="100%" height="300" style="border:0;border-radius:15px;" allowfullscreen loading="lazy"></iframe>
+</section><footer>
+  <p>© 2026 Spice Garden Restaurant. All Rights Reserved.</p>
+</footer></body>
+</html>
